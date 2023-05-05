@@ -1,0 +1,49 @@
+{
+  "name": "testprojects",
+  "version": "1.0.0",
+  "description": "A collection of projects for me to play around with",
+  "main": "README.md",
+  "scripts": {
+    "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
+    "build:assets": "node justinTestSite/scripts/build-assets.js",
+    "build:pug": "node justinTestSite/scripts/build-pug.js",
+    "build:scripts": "node justinTestSite/scripts/build-scripts.js",
+    "build:scss": "node justinTestSite/scripts/build-scss.js",
+    "clean": "node justinTestSite/scripts/clean.js",
+    "start": "npm run build && node justinTestSite/scripts/start.js",
+    "start:debug": "npm run build && node justinTestSite/scripts/start-debug.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikaylabryant1/testProjects.git"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "html",
+    "responsive",
+    "theme",
+    "template"
+  ],
+  "author": "Mikayla Bryant",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/mikaylabryant1/testProjects/issues"
+  },
+  "homepage": "https://github.com/mikaylabryant1/testProjects#readme",
+  "dependencies": {
+    "bootstrap": "5.2.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.4.14",
+    "browser-sync": "2.29.1",
+    "chokidar": "3.5.3",
+    "concurrently": "6.3.0",
+    "postcss": "8.4.21",
+    "prettier": "2.8.6",
+    "pug": "3.0.2",
+    "sass": "1.60.0",
+    "shelljs": "0.8.5",
+    "upath": "2.0.1"
+  }
+}
